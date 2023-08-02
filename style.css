@@ -1,0 +1,74 @@
+#contenedorpadre{
+    background-color: #50b4b4;
+    border: 2px solid #e3022f;
+}
+
+#cabezera{
+    background-color: #f4abf2;
+    height: 20%;
+}
+
+#menu{
+    background-color: #e3022f;
+    height: 10%;
+}
+
+#izquierda{
+    background-color:aqua;
+    height: 50%;
+    width: 50%;
+    float: left;
+}
+
+#derecha{
+    background-color:bisque;
+    height: 50%;
+    width: 50%;
+    float: right;
+}
+
+#pie{
+    background-color: cadetblue;
+    height: 10%;
+    clear: both;
+
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th,td{
+    border: 1px solid #ccc ;
+    padding: 8px;
+}
+
+.boton{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4C4f50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.tablero1{
+    margin:10px ;
+    font-size: 16px;
+    border: #a70909 solid 1px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.tablero2{
+    color: black;
+    margin:10px ;
+    font-size: 16px;
+    border: #a70909 solid 1px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+

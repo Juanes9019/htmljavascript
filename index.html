@@ -1,0 +1,124 @@
+<html>
+<head>
+    <title>mquetacion con css y divs</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script>
+
+        
+
+        console.log()
+
+        for (let i=0; i<=20;i++){
+            console.log("este numero es "+i);
+
+        }
+        function sumar(){
+            let campo1=document.getElementById("campo1").value;
+            let campo2=document.getElementById("campo2").value;
+            let resultado= parseInt(campo1)+ parseInt(campo2);
+            console.log(resultado);
+
+            let cajatexto=document.getElementById("mostrartablero1");
+            cajatexto.innerHTML=resultado;
+            
+        }
+
+        function nota(){
+            let nota = document.getElementById("nota").value; 
+            let cajatexto = document.getElementById("mostrar_nota");
+
+            if (nota >= 5){
+                cajatexto.innerHTML="aprobado";
+                
+            }else{
+                cajatexto.innerHTML="no aprobo";
+            }
+            
+        }
+
+        
+
+        function Unirnombres(nombres, apellidos) {
+            let completo = nombres + " " + apellidos;
+            console.log(completo);
+        }
+
+        Unirnombres("Juan", "Usuga");
+
+        function numero_par_impar() {
+            let campo = document.getElementById('campo').value;
+            let cajatexto = document.getElementById('mostrartablero2');
+
+            if (parseInt(campo) % 2 === 0) {
+                cajatexto.innerHTML="el numero es par "+campo;
+            }else {
+                cajatexto.innerHTML="el nuermo es impar "+campo;
+            }
+            
+        }
+
+        
+        
+    </script>
+</head>
+<body>
+    <div id="contenedorpadre">
+        <div id="cabezera">
+            <p style="margin-top: 0; color: blue; font-size: 50; font-weight: 700;">cabezera</p>
+        </div>
+    <div id="menu">menu</menu>
+    
+    </div>
+    <div id="izquierda">
+        <img src="pokemon.jpeg" height="220px" width="350">
+        <input type="text" name="nota" id="nota">
+        <button class="boton" onclick="nota()">enviar</button>
+        <div class="tablero1">
+            <span id="mostrar_nota"></span>
+        </div>
+    </div>
+    <div id="derecha">
+        <table >
+            <thead>
+                <th>cedula</th>
+                <th>nombres</th>
+                <th>apellidos</th>
+                <th>correo</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>12234</td> 
+                    <td>jorge</td> 
+                    <td>leal</td> 
+                    <td>jorge@gmail.com</td> 
+                </tr>
+                <tr>
+                    <td>666</td> 
+                    <td>jose</td> 
+                    <td>leal</td> 
+                    <td>jose@gmail.com</td> 
+                </tr>
+            </tbody>
+            <!--
+            <tr>
+                <p >haz<a href="https://www.google.com/?hl=es">click aca</a></p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ob6oKLCToDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </tr>
+            -->
+        </table>
+        <input type="text" name="campo1" id="campo1">
+        <input type="text" name="campo2" id="campo2">
+        <button class="boton" onclick="sumar()">clik sumar</button>
+        <div class="tablero1">
+            <span id="mostrartablero1"></span>
+        </div>
+            <input type="text" name="campo" id="campo">
+            <button class="boton" onclick="numero_par_impar()">par o impar</button>
+        <div class="tablero2">
+            <span id="mostrartablero2"></span>
+        </div>
+    </div>
+    <div id="pie"></div>
+    </div>
+</body>
+</html>
